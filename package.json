@@ -1,0 +1,24 @@
+{
+  "name": "post_auth_helper",
+  "version": "1.0.2",
+  "description": "Authorization server (clientID/clientSecret)",
+  "license": "UNLICESNED",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "prestart": "npm run build",
+    "prebuild": "(tslint -c tslint.json -p tsconfig.json --fix) && ((rd dist /s /q) || (exit 0))",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "ltr_http_errors": "^1.0.0",
+    "typescript-rest": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.15",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+*.env*
+*.log
+.vscode/*
+log/
+dist/
+uploads/
+.svn
+deploy/
+.gitignore
+src/
+tsconfig.json
+tslint.json
+dist/implementation.*
